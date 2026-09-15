@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnnig JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card shadow p-4">
+            <div class="card-body">
+                <h1 id="judul" class="text-center mb-3">
+                    daftar mahasiswa informatika
+                </h1>
+                <p id="deskripsi" class="text-center mb-3">
+                    Belajar manipulasi DOM dengan JavaScript
+                </p>
+                <div class="text-center mb-4">
+                    <button id="TombolUbah" class="btn btn-primary">
+                        Ubah judu
+                    </button>
+                    <button id="TombolTambah" class="btn btn-success">
+                        Tambah Mahasiswa
+                    </button>
+                </div>
+                <table class="table table-bordered table-hover text-center">
+                    <thead class="table-dark">
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dataMahasiswa">
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">3</th>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>@social</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+    let judul = document.getElementById("judul")
+    let deskripsi = document.getElementById("deskripsi")
+    let TombolUbah = document.getElementById("TombolUbah")
+    let TombolTambah = document.getElementById("TombolTambah")
+    let dataMahasiswa = document.getElementById("dataMahasiswa")
+
+    //Event tombol ubah judul
+    TombolUbah.addEventListener("click",function(){
+        judul.innerHTML = "Data Mahasiswa Informatika";
+        deskripsi.innerHTML = "Judul Berhasil diubah";
+    });
+
+    //event tombol tambah mahasiswa
+    TombolTambah.addEventListener("click",function(){
+        let barisBaru = document.createElement("tr");
+
+        barisBaru.innerHTML=`
+        <td>3</td>
+        <td>Nama</td>
+        <td>Jurusam</td>
+        <td>--</td>
+        `;
+        dataMahasiswa.append(barisBaru);
+    });
+</script>
+</body>
+</html>

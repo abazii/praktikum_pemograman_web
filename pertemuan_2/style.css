@@ -1,0 +1,64 @@
+body{
+    background-color: #abf79c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Website{
+    padding: 20px;
+    border-radius: 10px;
+    color : #cbe971;
+    background-color: rgb(41, 99, 4);
+}
+
+.heading{
+    display: flex;
+    background-color: rgb(41, 99, 4);
+}
+
+.semua{
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    height: 900px;
+}
+
+
+.navbar{
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.isi{
+    display: flex;
+    background-color: lightgray;
+    padding-bottom: 20px;
+}
+
+.judul{
+    margin-left: 25px;
+    width: 600px;
+}
+
+#bumi{
+    width: 175px;
+}
+.paragraf{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer{
+    height: 30px;
+    align-items: center;
+    background-color: rgb(36, 79, 10);
+    display: flex;
+    justify-content: center;
+    color: rgb(178, 178, 178);
+    ;
+}

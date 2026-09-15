@@ -1,0 +1,23 @@
+body {background-color :#3286c2;}
+
+
+#heading2{
+color: bisque;
+}
+
+#heading1 {
+font-size: 1.5rem;
+font-weight: 700;
+color: #8aa4c7;
+margin-bottom: 8px;
+}
+
+.a1 {
+    color :greenyellow;
+}
+
+.kotak1 {
+    width:700;
+    height:700;
+    background-color :rgba(252, 251, 251, 0.43);
+}

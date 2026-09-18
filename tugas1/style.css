@@ -1,0 +1,16 @@
+body{
+    background-color: lightblue;
+}
+
+.container-fluid{
+    display: flex;
+    background-color: darkcyan;
+}
+
+.card {
+    margin: 100px;
+}
+
+form {
+    margin: 13px;
+}

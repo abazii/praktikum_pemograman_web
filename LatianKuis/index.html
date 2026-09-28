@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary"
+      style="background-color: #ffffff"
+    >
+      <div class="container-fluid">
+        <img src="src/logo.PNG" alt="S H O E S." style="width: 90px" />
+        <div>
+          <button class="btn btn-custom">Home</button>
+          <button class="btn btn-custom">Product</button>
+          <button class="btn btn-custom">About</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="card-custom">
+      <div id="bg-card" class="card shadow mb-3" style="max-width: 650px">
+        <div class=" d-flex">
+          <div class="gambar">
+            <img
+              src="src/sepatu.jpeg"
+              class="img-custom rounded-3 p-1"
+              alt="sepatu"
+            />
+          </div>
+          <div class="">
+            <div class="card-body">
+              <p class="kategori"">RUNNING SHOES</p>
+              <h2 class="card-title fw-bold">Air Runner</h2>
+              <p class="card-text deskripsi">
+                Sepatu ringan dan nyaman untuk digunakan saat berolahraga maupun
+                aktivitas sehari-hari.
+              </p>
+              <h5 class="fw-bold" style="margin-top: 10px; margin-bottom: 10px;">Rp 899.000</h5>
+              <p class="card-text">Pilih warna</p>
+              <div class="d-flex gap-2">
+                <button
+                  onclick="black()"
+                  class="bg-dark rounded-circle"
+                ></button>
+                <button
+                  onclick="changeBg('#CFE2FF')"
+                  class="bg-blue rounded-circle"
+                ></button>
+                <button
+                  onclick="changeBg('#F5E6CC')"
+                  class="bg-cream rounded-circle"
+                ></button>
+              </div>
+              <button type="button" class="btn card-text w-100 btn-dark">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const bgcard = document.getElementById("bg-card");
+
+      function black() {
+        bgcard.style.backgroundColor = "#DDDDDD";
+      }
+
+      function changeBg(color) {
+        bgcard.style.backgroundColor = color;
+      }
+    </script>
+  </body>
+</html>

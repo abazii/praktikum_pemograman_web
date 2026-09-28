@@ -23,6 +23,16 @@ body {
   transition: all 0.3s ease;
 }
 
+.btn-dark {
+  background-color: #000000;
+}
+
+.btn-dark:hover {
+  background-color: #444444;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
 .card-custom {
   display: flex;
   justify-content: center;
